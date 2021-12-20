@@ -40,17 +40,16 @@ $posts = [
     ],
 ];
 //var_dump($posts);
+$postDates = array_keys($posts);
+//var_dump($postDates);
 
 for ($i = 0; $i < count($posts); $i++){
-  echo "<h2>{$posts['10/01/2019'][$i]['title']}</h2> 
-        <p><em>{$posts['10/01/2019'][$i]['author']}</em></p> 
-        <h3>{$posts['10/01/2019'][$i]['text']}</h3>";
-  echo "<h2>{$posts['10/02/2019'][$i]['title']}</h2> 
-        <p><em>{$posts['10/02/2019'][$i]['author']}</em></p> 
-        <h3>{$posts['10/02/2019'][$i]['text']}</h3>";
-  echo "<h2>{$posts['15/05/2019'][$i]['title']}</h2> 
-        <p><em>{$posts['15/05/2019'][$i]['author']}</em></p> 
-        <h3>{$posts['15/05/2019'][$i]['text']}</h3>";
+  for ($j = 0; $j < count($posts); $j++) {
+    echo "<h2>{$posts[$postDates[$i]][$j]['title']}</h2> 
+          <p><em>{$posts[$postDates[$i]][$j]['author']}</em></p> 
+          <h3>{$posts[$postDates[$i]][$j]['text']}</h3>";
+  }
+
 }
 ?>
 
