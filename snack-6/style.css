@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+ul>li {
+  font-weight: 700;
+}
+
+div.teachers, div.pms {
+  width: 400px;
+  padding: 20px;
+}
+
+.teachers {
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+.pms {
+  border: 2px solid grey;
+  border-radius: 10px;
+}
