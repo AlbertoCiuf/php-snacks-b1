@@ -27,11 +27,11 @@ div.teachers, div.pms {
 }
 
 .teachers {
-  border: 2px solid green;
+  border: 2px solid grey;
   border-radius: 10px;
 }
 
 .pms {
-  border: 2px solid grey;
+  border: 2px solid green;
   border-radius: 10px;
 }
